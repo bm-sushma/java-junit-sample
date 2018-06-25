@@ -13,7 +13,10 @@ public class ExternalSystemProxy {
     public void update(Customer customer) {
 
         // Do something here that does not run outside test- or production environment
-        dummy.equals("dummy");
+        if(dummy.equals("dummy"))
+        {
+            dummy="Hi";   
+        }
     }
 
 
