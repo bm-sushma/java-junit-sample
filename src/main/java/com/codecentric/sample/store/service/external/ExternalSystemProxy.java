@@ -10,7 +10,7 @@ public class ExternalSystemProxy {
 
     private static String dummy = null;
 
-    public void update(Customer customer) {
+    public static void update(Customer customer) {
 
         // Do something here that does not run outside test- or production environment
         if(dummy.equals("dummy"))
